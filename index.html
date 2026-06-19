@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Store — Premium Footwear</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/icon/running-shoe.png">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- navbar -->
+    <header class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hidden checkbox for the toggle logic -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <div class="flex justify-between items-center h-16 relative">
+                <a href="#" class="text-2xl font-black tracking-tighter text-blue-600">
+                    SHOES<span class="text-gray-900">STORE</span>
+                </a>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wide">
+                    <a href="./index.html" class="text-blue-600">Home</a>
+                    <a href="./collection.html" class="text-gray-600 hover:text-blue-600 transition">Collection</a>
+                    <a href="./about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="./contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+
+                <!-- Hamburger Label (Acts as the button) -->
+                <label for="menu-toggle" class="md:hidden p-2 text-gray-600 cursor-pointer hover:bg-gray-100 rounded-lg transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </label>
+            </div>
+
+            <!-- Mobile Menu (Toggled by the peer-checked state) -->
+            <div class="hidden peer-checked:block bg-white border-t border-gray-100 pb-6 transition-all">
+                <a href="./index.html" class="block py-3 px-4 text-sm font-bold text-blue-600 border-b border-gray-50">Home</a>
+                <a href="collection.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Collection</a>
+                <a href="about.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">About</a>
+                <a href="contact.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- hero section-->
+        <section id="hero" class="bg-gray-100 overflow-hidden min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 space-y-8 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-black text-gray-900 leading-tight">
+                        GET YOUR <span class="text-blue-600">STYLE</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-lg leading-relaxed">
+                        Find your favorite shoes. Buy with confidence and happiness with thousands of brand new and latest products.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="./collection.html" class="bg-gray-900 text-white px-10 py-4 rounded-xl font-bold hover:bg-blue-600 transition shadow-xl hover:-translate-y-1 duration-300">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
+                    <img src="https://images.pexels.com/photos/28488349/pexels-photo-28488349.jpeg" alt="Featured Sneaker"
+                        class="relative rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500 w-full object-cover aspect-[4/3]">
+                </div>
+            </div>
+        </section>
+
+        <!-- trusted feature -->
+        <section class="py-24 bg-white border-y border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-4xl shadow-inner">🚚</div>
+                        <h3 class="text-2xl font-black">Safe Delivery</h3>
+                        <p class="text-gray-500 leading-relaxed">We provide secure and fast shipping to your doorstep with real-time tracking for every order.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-4xl shadow-inner">🛡️</div>
+                        <h3 class="text-2xl font-black">Quality Assurance</h3>
+                        <p class="text-gray-500 leading-relaxed">Every pair is hand-inspected by our experts to guarantee the highest standards of comfort and durability.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-4xl shadow-inner">💰</div>
+                        <h3 class="text-2xl font-black">Money Back</h3>
+                        <p class="text-gray-500 leading-relaxed">Not 100% satisfied? Enjoy our hassle-free 30-day return policy with full refund guarantees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- product -->
+        <section id="feature" class="py-32 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-black text-gray-900 mb-4 uppercase tracking-tighter">Product Featured</h2>
+                <p class="text-gray-500 mb-16 max-w-2xl mx-auto">Find your favorite product in this section. Hand-picked quality and comfort for your everyday needs.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product Item (Repeated for demo) -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-square rounded-xl overflow-hidden mb-6 bg-gray-100">
+                            <img src="https://images.pexels.com/photos/28488349/pexels-photo-28488349.jpeg" alt="Sneaker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-left">Elite Sneaker</h3>
+                        <p class="text-gray-500 text-sm text-left mt-2 mb-6 line-clamp-2">Premium material with breathable fabric for extreme comfort and style.</p>
+                        <div class="flex items-center justify-between border-t border-gray-50 pt-4">
+                            <span class="text-2xl font-black text-blue-600">$90.00</span>
+                            <button class="bg-gray-900 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-600 transition">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Product Item 2 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-square rounded-xl overflow-hidden mb-6 bg-gray-100">
+                            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt="Sneaker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-left">Classic Air</h3>
+                        <p class="text-gray-500 text-sm text-left mt-2 mb-6 line-clamp-2">The original street icon, reimagined for modern-day athletic performance.</p>
+                        <div class="flex items-center justify-between border-t border-gray-50 pt-4">
+                            <span class="text-2xl font-black text-blue-600">$120.00</span>
+                            <button class="bg-gray-900 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-600 transition">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Product Item 3 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-square rounded-xl overflow-hidden mb-6 bg-gray-100">
+                            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Sneaker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-left">Swift Runner</h3>
+                        <p class="text-gray-500 text-sm text-left mt-2 mb-6 line-clamp-2">Ultra-lightweight materials for those who never want to slow down.</p>
+                        <div class="flex items-center justify-between border-t border-gray-50 pt-4">
+                            <span class="text-2xl font-black text-blue-600">$85.00</span>
+                            <button class="bg-gray-900 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-600 transition">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Product Item 4 -->
+                    <div class="group bg-white rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-square rounded-xl overflow-hidden mb-6 bg-gray-100">
+                            <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg" alt="Sneaker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-left">Urban Explorer</h3>
+                        <p class="text-gray-500 text-sm text-left mt-2 mb-6 line-clamp-2">Rugged yet stylish. Perfect for both city streets and light trails.</p>
+                        <div class="flex items-center justify-between border-t border-gray-50 pt-4">
+                            <span class="text-2xl font-black text-blue-600">$105.00</span>
+                            <button class="bg-gray-900 text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-blue-600 transition">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="py-32 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-20">
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -inset-4 bg-blue-50 rounded-full blur-3xl opacity-60"></div>
+                        <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" alt="Our Craft" class="relative rounded-[3rem] shadow-2xl transform -rotate-2 hover:rotate-0 transition duration-700 w-full object-cover aspect-[4/5]">
+                    </div>
+                    <div class="lg:w-1/2 space-y-10">
+                        <h2 class="text-4xl md:text-6xl font-black text-gray-900 uppercase tracking-tighter">Our Legacy of <span class="text-blue-600">Comfort</span></h2>
+                        <p class="text-xl text-gray-600 leading-relaxed font-medium">
+                            Born from a passion for premium footwear, ShoesStore has been redefining the way you walk since 2015.
+                        </p>
+                        <p class="text-gray-500 leading-relaxed text-lg">
+                            What started as a small boutique in Phnom Penh has evolved into a global community of sneaker enthusiasts. We believe that footwear is more than just an accessory—it's a foundation for your daily journey. Our designs blend ergonomic technology with contemporary street aesthetics.
+                        </p>
+                        <div class="grid grid-cols-2 gap-10">
+                            <div class="space-y-2">
+                                <p class="text-5xl font-black text-blue-600">80K+</p>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Happy Runners</p>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-5xl font-black text-blue-600">12+</p>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact-->
+        <section id="contact" class="py-32 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div class="space-y-8">
+                        <h2 class="text-4xl font-black text-gray-900 uppercase tracking-tighter">Let's Talk</h2>
+                        <p class="text-lg text-gray-600">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <div class="space-y-4">
+                            <p class="flex items-center gap-3">📍 <span class="text-gray-700">123 Street, Sangkat, Phnom Penh, Cambodia</span></p>
+                            <p class="flex items-center gap-3">📞 <a href="tel:+855973971702" class="hover:text-blue-600 transition">+855 97 397 1702</a></p>
+                            <p class="flex items-center gap-3">✉️ <a href="mailto:heng@shop.gmail.com" class="hover:text-blue-600 transition">heng@shop.gmail.com</a></p>
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden border-4 border-white shadow-xl h-64 grayscale hover:grayscale-0 transition duration-500">
+                            <img src="https://www.shutterstock.com/shutterstock/photos/1331157386/display_1500/stock-vector-illustrations-design-concept-location-maps-with-road-follow-route-for-destination-drive-by-gps-1331157386.jpg" alt="Map location" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <form class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl space-y-6" action="#" method="post">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Email Address</label>
+                            <input type="email" name="email" placeholder="name@email.com" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Subject</label>
+                            <select name="subject" class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                                <option>General Inquiry</option>
+                                <option>Order Support</option>
+                                <option>Partnership</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+                            <textarea name="message" rows="4" placeholder="How can we help?" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-black py-4 rounded-xl hover:bg-gray-900 transition shadow-lg shadow-blue-200">
+                            SEND MESSAGE →
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-white border-t border-gray-200 pt-24 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-16">
+            <div class="text-center md:text-left space-y-4">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">My Shop</h3>
+                <p class="text-gray-500 leading-relaxed">Redefining street style with premium footwear designed for every journey. Walk your way with confidence.</p>
+            </div>
+
+            <div class="text-center md:text-left">
+                    <h3 class = "font-bold tracking-widest text-xl md:text-2xl text-blue-600">Quick Links</h3>
+                    <ul class="flex flex-col mt-6 text-sm text-gray-500 gap-4">
+                        <li><a href="./index.html" class="hover:text-blue-600 transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="./collection.html" class="hover:text-blue-600 transition">Latest Collection</a></li>
+                        <li><a href="./contact.html" class="hover:text-blue-600 transition">Contact Support</a></li>
+                    </ul>
+            </div>
+
+            <div class="flex flex-col text-center md:text-left gap-4 text-gray-500">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">Get In Touch</h3>
+                <p class="flex items-center justify-center md:justify-start gap-2">📞 <span class="text-gray-900 font-semibold">+855 97 397 1702</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2">✉️ <span class="text-gray-900 font-semibold">heng@shop.gmail.com</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2 text-sm leading-tight">📍 <span>123 Street, Sangkat, Phnom Penh</span></p>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400 uppercase font-black tracking-[0.2em]">&copy; 2026 SHOESTORE. Crafted for Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

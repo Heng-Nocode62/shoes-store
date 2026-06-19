@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="/icon/running-shoe.png">
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <!-- navbar -->
+    <header class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hidden checkbox for the toggle logic -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <div class="flex justify-between items-center h-16 relative">
+                <a href="#" class="text-2xl font-black tracking-tighter text-blue-600">
+                    SHOES<span class="text-gray-900">STORE</span>
+                </a>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wide">
+                    <a href="./index.html" class="text-gray-600 hvoer:text-blue-600 transition">Home</a>
+                    <a href="./collection.html" class="text-gray-600 hover:text-blue-600 transition">Collection</a>
+                    <a href="./about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="./contact.html" class="text-blue-600">Contact</a>
+                </div>
+
+                <!-- Hamburger Label (Acts as the button) -->
+                <label for="menu-toggle" class="md:hidden p-2 text-gray-600 cursor-pointer hover:bg-gray-100 rounded-lg transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </label>
+            </div>
+
+            <!-- Mobile Menu (Toggled by the peer-checked state) -->
+            <div class="hidden peer-checked:block bg-white border-t border-gray-100 pb-6 transition-all">
+                <a href="./index.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Home</a>
+                <a href="collection.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Collection</a>
+                <a href="about.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">About</a>
+                <a href="contact.html" class="block py-3 px-4 text-sm font-bold text-blue-600 border-b border-gray-50">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <section id="contact" class="py-32 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div class="space-y-8">
+                        <h2 class="text-4xl font-black text-gray-900 uppercase tracking-tighter">Let's Talk</h2>
+                        <p class="text-lg text-gray-600">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        
+                        <div class="space-y-4">
+                            <p class="flex items-center gap-3">📍 <span class="text-gray-700">123 Street, Sangkat, Phnom Penh, Cambodia</span></p>
+                            <p class="flex items-center gap-3">📞 <a href="tel:+855973971702" class="hover:text-blue-600 transition">+855 97 397 1702</a></p>
+                            <p class="flex items-center gap-3">✉️ <a href="mailto:heng@shop.gmail.com" class="hover:text-blue-600 transition">heng@shop.gmail.com</a></p>
+                        </div>
+
+                        <div class="rounded-2xl overflow-hidden border-4 border-white shadow-xl h-64 grayscale hover:grayscale-0 transition duration-500">
+                            <img src="https://www.shutterstock.com/shutterstock/photos/1331157386/display_1500/stock-vector-illustrations-design-concept-location-maps-with-road-follow-route-for-destination-drive-by-gps-1331157386.jpg" alt="Map location" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <form class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl space-y-6" action="#" method="post">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Email Address</label>
+                            <input type="email" name="email" placeholder="name@email.com" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Subject</label>
+                            <select name="subject" class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition">
+                                <option>General Inquiry</option>
+                                <option>Order Support</option>
+                                <option>Partnership</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+                            <textarea name="message" rows="4" placeholder="How can we help?" required class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:ring-2 focus:ring-blue-600 outline-none transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-black py-4 rounded-xl hover:bg-gray-900 transition shadow-lg shadow-blue-200">
+                            SEND MESSAGE →
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-white border-t border-gray-200 pt-24 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-16">
+            <div class="text-center md:text-left space-y-4">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">My Shop</h3>
+                <p class="text-gray-500 leading-relaxed">Redefining street style with premium footwear designed for every journey. Walk your way with confidence.</p>
+            </div>
+
+            <div class="text-center md:text-left">
+                    <h3 class = "font-bold tracking-widest text-xl md:text-2xl text-blue-600">Quick Links</h3>
+                    <ul class="flex flex-col mt-6 text-sm text-gray-500 gap-4">
+                        <li><a href="./index.html" class="hover:text-blue-600 transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="./collection.html" class="hover:text-blue-600 transition">Latest Collection</a></li>
+                        <li><a href="./contact.html" class="hover:text-blue-600 transition">Contact Support</a></li>
+                    </ul>
+            </div>
+
+            <div class="flex flex-col text-center md:text-left gap-4 text-gray-500">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">Get In Touch</h3>
+                <p class="flex items-center justify-center md:justify-start gap-2">📞 <span class="text-gray-900 font-semibold">+855 97 397 1702</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2">✉️ <span class="text-gray-900 font-semibold">heng@shop.gmail.com</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2 text-sm leading-tight">📍 <span>123 Street, Sangkat, Phnom Penh</span></p>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400 uppercase font-black tracking-[0.2em]">&copy; 2026 SHOESTORE. Crafted for Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

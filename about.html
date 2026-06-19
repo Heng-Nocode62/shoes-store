@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="/icon/running-shoe.png">
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <!-- navbar -->
+    <header class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Hidden checkbox for the toggle logic -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <div class="flex justify-between items-center h-16 relative">
+                <a href="#" class="text-2xl font-black tracking-tighter text-blue-600">
+                    SHOES<span class="text-gray-900">STORE</span>
+                </a>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wide">
+                    <a href="./index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="./collection.html" class="text-gray-600 hover:text-blue-600 transition">Collection</a>
+                    <a href="./about.html" class="text-blue-600">About</a>
+                    <a href="./contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+
+                <!-- Hamburger Label (Acts as the button) -->
+                <label for="menu-toggle" class="md:hidden p-2 text-gray-600 cursor-pointer hover:bg-gray-100 rounded-lg transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </label>
+            </div>
+
+            <!-- Mobile Menu (Toggled by the peer-checked state) -->
+            <div class="hidden peer-checked:block bg-white border-t border-gray-100 pb-6 transition-all">
+                <a href="./index.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600 ">Home</a>
+                <a href="collection.html" class="block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Collection</a>
+                <a href="about.html" class="block py-3 px-4 text-sm font-bold text-blue-600 border-b border-gray-50">About</a>
+                <a href="contact.html" class=" block py-3 px-4 text-sm font-bold text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="pt-16">
+         <!-- about -->
+        <section id="about" class="py-32 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-20">
+                    <div class="lg:w-1/2 relative">
+                        <div class="absolute -inset-4 bg-blue-50 rounded-full blur-3xl opacity-60"></div>
+                        <img src="https://images.pexels.com/photos/2385477/pexels-photo-2385477.jpeg" alt="Our Craft" class="relative rounded-[3rem] shadow-2xl transform -rotate-2 hover:rotate-0 transition duration-700 w-full object-cover aspect-[4/5]">
+                    </div>
+                    <div class="lg:w-1/2 space-y-10">
+                        <h2 class="text-4xl md:text-6xl font-black text-gray-900 uppercase tracking-tighter">Our Legacy of <span class="text-blue-600">Comfort</span></h2>
+                        <p class="text-xl text-gray-600 leading-relaxed font-medium">
+                            Born from a passion for premium footwear, ShoesStore has been redefining the way you walk since 2015.
+                        </p>
+                        <p class="text-gray-500 leading-relaxed text-lg">
+                            What started as a small boutique in Phnom Penh has evolved into a global community of sneaker enthusiasts. We believe that footwear is more than just an accessory—it's a foundation for your daily journey. Our designs blend ergonomic technology with contemporary street aesthetics.
+                        </p>
+                        <div class="grid grid-cols-2 gap-10">
+                            <div class="space-y-2">
+                                <p class="text-5xl font-black text-blue-600">80K+</p>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Happy Runners</p>
+                            </div>
+                            <div class="space-y-2">
+                                <p class="text-5xl font-black text-blue-600">12+</p>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white border-y border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-25 h-25 text-blue-600 flex items-center justify-center text-4xl">
+                            <img class="w-full h-full "
+                             src="./icon/delivery.png" alt="">
+                        </div>
+                        <h3 class="text-3xl font-black">Safe Delivery</h3>
+                        <p class="text-gray-500 leading-relaxed text-md">We provide secure and fast shipping to your doorstep with real-time tracking for every order.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-25 h-25 flex items-center justify-center text-4xl">
+                            <img class="w-full h-full"
+                            src="./icon/security.png" alt="">
+                        </div>
+                        <h3 class="text-3xl font-black">Quality Assurance</h3>
+                        <p class="text-gray-500 text-md leading-relaxed">Every pair is hand-inspected by our experts to guarantee the highest standards of comfort and durability.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center space-y-4">
+                        <div class="w-25 h-25 flex items-center justify-center text-4xl">
+                            <img class="w-full h-full"
+                            src="./icon/image.png" alt="">
+                        </div>
+                        <h3 class="text-3xl font-black">Money Back</h3>
+                        <p class="text-gray-500 text-md leading-relaxed">Not 100% satisfied? Enjoy our hassle-free 30-day return policy with full refund guarantees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100/80 py-12">
+            <div class="max-w-7xl mx-auto px-4">
+
+                <h2 class="text-3xl font-bold text-gray-900 tracking-wide mb-8">
+                    Our Shop
+                </h2>
+
+                <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/28593086/pexels-photo-28593086.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/13807630/pexels-photo-13807630.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/8633771/pexels-photo-8633771.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/19294576/pexels-photo-19294576.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/6321864/pexels-photo-6321864.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/12252417/pexels-photo-12252417.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/28271086/pexels-photo-28271086.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/19294576/pexels-photo-19294576.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/2918534/pexels-photo-2918534.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="mb-4 break-inside-avoid overflow-hidden rounded-xl shadow-md">
+                        <img
+                            class="w-full hover:scale-105 transition duration-500"
+                            src="https://images.pexels.com/photos/12252417/pexels-photo-12252417.jpeg"
+                            alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-white border-t border-gray-200 pt-24 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-16">
+            <div class="text-center md:text-left space-y-4">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">My Shop</h3>
+                <p class="text-gray-500 leading-relaxed">Redefining street style with premium footwear designed for every journey. Walk your way with confidence.</p>
+            </div>
+
+            <div class="text-center md:text-left">
+                    <h3 class = "font-bold tracking-widest text-xl md:text-2xl text-blue-600">Quick Links</h3>
+                    <ul class="flex flex-col mt-6 text-sm text-gray-500 gap-4">
+                        <li><a href="./index.html" class="hover:text-blue-600 transition">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-blue-600 transition">About Us</a></li>
+                        <li><a href="./collection.html" class="hover:text-blue-600 transition">Latest Collection</a></li>
+                        <li><a href="./contact.html" class="hover:text-blue-600 transition">Contact Support</a></li>
+                    </ul>
+            </div>
+
+            <div class="flex flex-col text-center md:text-left gap-4 text-gray-500">
+                <h3 class="font-bold tracking-widest text-xl md:text-2xl text-blue-600">Get In Touch</h3>
+                <p class="flex items-center justify-center md:justify-start gap-2">📞 <span class="text-gray-900 font-semibold">+855 97 397 1702</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2">✉️ <span class="text-gray-900 font-semibold">heng@shop.gmail.com</span></p>
+                <p class="flex items-center justify-center md:justify-start gap-2 text-sm leading-tight">📍 <span>123 Street, Sangkat, Phnom Penh</span></p>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400 uppercase font-black tracking-[0.2em]">&copy; 2026 SHOESTORE. Crafted for Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
